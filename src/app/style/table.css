@@ -1,0 +1,90 @@
+/* globals.css or component.module.css */
+
+.custom-table {
+  padding: 10px 30px;
+  background: black;
+  border-radius: 10px;
+}
+.custom-table .ant-table-container {
+  background-color: #1c1f2a !important;
+  border-radius: 12px;
+}
+
+.custom-table .ant-table-thead > tr > th {
+  background-color: black !important;
+  color: white !important;
+  border: none;
+}
+
+.custom-table .ant-table-tbody {
+  border-radius: 100px;
+}
+.custom-table .ant-pagination-item:hover a {
+  color: black !important; /* Text color */
+  background-color: white !important; /* Your custom background color */
+  border-color: #9b28a8 !important;
+  border-radius: 5px !important;
+}
+
+/* Optional: Highlight the active pagination item */
+.custom-table .ant-pagination-item-active a {
+  background-color: gray !important;
+  border-color: #9b28a8 !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+.custom-table .ant-table-tbody > tr > td {
+  background-color: #1c1f2a !important;
+  color: #ffffff;
+  border-color: #2c2f3a;
+}
+.custom-table .ant-table-thead > tr > th::before {
+  display: none !important;
+  content: none !important;
+}
+/* Hover row background */
+.custom-table .ant-table-tbody > tr:hover > td {
+  background-color: #2a2d3d !important;
+}
+
+/* Center pagination in Ant Design table */
+.custom-table .ant-pagination {
+  display: flex;
+  justify-content: center;
+}
+/* Center pagination controls */
+.custom-table .ant-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Make prev/next arrows white & center them */
+.custom-table .ant-pagination-prev,
+.custom-table .ant-pagination-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+}
+
+/* Optional: Make icons larger or more visible */
+.custom-table .ant-pagination-prev svg,
+.custom-table .ant-pagination-next svg {
+  color: white;
+  width: 16px;
+  height: 16px;
+}
+
+/* Optional: Add hover effect */
+.custom-table .ant-pagination-prev:hover,
+.custom-table .ant-pagination-next:hover {
+  background-color: #3a86ff;
+  color: white;
+}
+
+.custom-table .ant-pagination-item-active {
+  background-color: #5861c3;
+  border-color: #5861c3;
+}

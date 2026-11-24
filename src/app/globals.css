@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sans: "Poppins", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: popoins, sans-serif;
+}
+
+/* Works in globals.css */
+.custom-select .ant-select-selector {
+  background-color: #2e2f3e !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0.375rem; /* rounded-md */
+}
+
+.custom-select .ant-select-selection-item {
+  color: white !important;
+}
+
+.ant-select-dropdown {
+  background-color: #2e2f3e !important;
+  color: white !important;
+}
+.grayBg {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #2c3036 !important;
+  background-image: linear-gradient(#292929, #292929),
+    linear-gradient(95deg, #fff 1.89%, #666 101.03%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.custom-placeholder::placeholder {
+  color: white !important;
+}
+/* Style for the select box itself */
+.custom-select-dropdown .ant-select-selector {
+  background-color: #2c3036 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  border: 1px solid #c9c9c9 !important;
+  /* height: 40px !important; */
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Arrow icon */
+.custom-select-dropdown .ant-select-arrow {
+  color: white !important;
+}
+
+/* Dropdown wrapper */
+.custom-select-options {
+  background-color: #1f1f1f !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  border: 1px solid #c9c9c9 !important;
+}
+
+/* All option items */
+.custom-select-options .ant-select-item-option {
+  background-color: #1f1f1f !important;
+  color: white !important;
+  padding: 12px 16px !important;
+  border-bottom: 1px solid #555 !important;
+}
+
+/* Hover state */
+.custom-select-options .ant-select-item-option:hover {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+
+/* Selected state */
+.custom-select-options .ant-select-item-option-selected {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+
+/* Active/focus state (when clicked or highlighted with keyboard) */
+.custom-select-options .ant-select-item-option-active {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+
+/* Last option - remove border */
+.custom-select-options .ant-select-item-option:last-child {
+  border-bottom: none !important;
+}
+
+/* Hover effect */
+.custom-select-options .ant-select-item-option:hover {
+  background-color: #2a2a2a !important;
+}
+
+h2 {
+  font-size: 32px !important;
+  font-weight: 600 !important;
+}
+:where(.ant-modal-content) {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+/* Make modal close icon white and bold */
+:where(.ant-modal-close) {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* badge-modal  */
+/* Apply black background to the entire modal */
+.badge-modal .ant-modal-content {
+  background-color: #1b1d29 !important;
+  color: white !important;
+}
+
+/* Make the header black */
+.badge-modal .ant-modal-header {
+  background-color: #1b1d29 !important;
+  border-bottom: 1px solid #333; /* optional, customize border */
+}
+
+/* Title text color */
+.badge-modal .ant-modal-title {
+  color: white !important;
+}
+
+/* Make close icon white and bold */
+.badge-modal .ant-modal-close {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Optional: close icon hover background transparent */
+.badge-modal .ant-modal-close-x {
+  background-color: transparent !important;
+}
